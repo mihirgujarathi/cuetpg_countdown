@@ -5,7 +5,6 @@ import { useEffect, useRef, useState, useCallback } from "react";
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface Quote {
   text: string;
-  source: string;
 }
 
 interface TimeLeft {
@@ -17,10 +16,10 @@ interface TimeLeft {
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 const EXAM_DATE = new Date("2026-03-06T09:00:00");
-const QUOTE_INTERVAL_MS = 12000;
-const BG_INTERVAL_MS = 10000;
+const QUOTE_INTERVAL_MS = 30000;
+const BG_INTERVAL_MS = 30000;
 
-const BG_IMAGES: string[] = ["jk1.webp", "jk2.webp", "jk3.jpg", "jk4.jpg", "jk5.jpg"];
+const BG_IMAGES: string[] = ["jk1.webp", "jk2.webp", "jk3.jpg", "jk4.jpg", "jk5.jpg", "jk6.jpg", "jk7.jpg", "jk8.jpg", "jk9.jpg", "jk10.jpg", "jk11.jpg", "jk12.jpg", "jk13.jpg"];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 function getTimeLeft(): TimeLeft {
@@ -79,8 +78,8 @@ export default function CountdownPage() {
       })
       .catch(() => {
         setQuotes([
-          { text: "Life goes on. 💜", source: "BTS" },
-          { text: "You've got this!", source: "ARMY" },
+          { text: "Life goes on. 💜"},
+          { text: "You've got this!"},
         ]);
       });
   }, []);
@@ -228,7 +227,7 @@ export default function CountdownPage() {
 
       <main className="main-container">
         <header className="site-header">
-          <div className="bts-badge">Keep fighting, Prachi! ✦ I believe in you</div>
+          <div className="bts-badge">I believe in you, my Noor</div>
           <h1 className="site-title">
             Days until <span>CUET PG</span>
           </h1>
