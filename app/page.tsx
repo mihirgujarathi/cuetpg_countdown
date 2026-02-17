@@ -18,10 +18,9 @@ interface TimeLeft {
 // ─── Constants ────────────────────────────────────────────────────────────────
 const EXAM_DATE = new Date("2026-03-06T09:00:00");
 const QUOTE_INTERVAL_MS = 12000;
-const BG_INTERVAL_MS = 2000;
+const BG_INTERVAL_MS = 10000;
 
-// const BG_IMAGES: string[] = ["jk1.webp", "jk2.webp", "jk3.jpg", "jk4.jpg", "jk5.jpg"];
-const BG_IMAGES: string[] = ["jk3.jpg", "jk4.jpg", "jk5.jpg"];
+const BG_IMAGES: string[] = ["jk1.webp", "jk2.webp", "jk3.jpg", "jk4.jpg", "jk5.jpg"];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 function getTimeLeft(): TimeLeft {
