@@ -34,7 +34,7 @@ jobs:
         run: npm run build
         env:
           # Replace "cuet-countdown" with your actual repo name
-          NEXT_PUBLIC_BASE_PATH: /cuet-countdown
+          NEXT_PUBLIC_BASE_PATH: /cuetpg_countdown
 
       - name: Add .nojekyll
         run: touch out/.nojekyll
