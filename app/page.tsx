@@ -15,7 +15,7 @@ interface TimeLeft {
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-const EXAM_DATE = new Date("2026-03-06T09:00:00");
+const EXAM_DATE = new Date("2026-03-08T18:00:00");
 const QUOTE_INTERVAL_MS = 30000;
 const BG_INTERVAL_MS = 30000;
 
